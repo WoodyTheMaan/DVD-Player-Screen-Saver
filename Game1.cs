@@ -31,12 +31,13 @@ namespace DVD_Player_Screen_Saver
             _graphics.PreferredBackBufferHeight = 600;
             _graphics.ApplyChanges();
 
-            DVDRect = new Rectangle(300, 10, 150, 100);
-            DVDSpeed = new Vector2(15, 16);
+            DVDSpeed = new Vector2(2, 2);
             generator = new Random();
+            DVDRect = new Rectangle(generator.Next(2, 400), generator.Next(2, 400), 150, 100);
             DVDColors = new() {
                 Color.AliceBlue, Color.Green,
-                Color.Red, Color.Blue, Color.Pink, Color.Yellow, Color.White 
+                Color.Red, Color.Blue, Color.Orange, Color.Yellow, Color.White, Color.SaddleBrown
+                , Color.Magenta, Color.Purple, Color.Black
             
             };
             base.Initialize();
