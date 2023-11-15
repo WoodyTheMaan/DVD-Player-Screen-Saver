@@ -83,7 +83,7 @@ namespace DVD_Player_Screen_Saver
             GraphicsDevice.Clear(Color.Black);
             _spriteBatch.Begin();
             _spriteBatch.Draw(DVDTex,DVDRect, DVDColors[currentColor]);
-            _spriteBatch.End();
+            _spriteBatch.End(); 
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
